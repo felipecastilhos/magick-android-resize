@@ -1,0 +1,12 @@
+ITS NECESSARY TO HAVE IMAGEMAGICK INSTALLED:
+http://www.imagemagick.org/
+
+Ubuntu:
+sudo apt-get install imagemagick
+
+Mac OS:
+http://cactuslab.com/imagemagick/
+
+	
+Windows:
+http://www.imagemagick.org/script/binary-releases.php
