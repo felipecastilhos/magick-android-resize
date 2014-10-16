@@ -31,16 +31,17 @@ IMAGE_WIDTH=$(identify $i | awk ' {print $3} ' | awk ' BEGIN{FS="x"} {print $2}'
 
 #CREATE MDPI
 MDPI_SIZE=$(echo "${IMAGE_WIDTH} / 3 " | bc -l) 
-convert $i -resize $MDPI_SIZE $MDPI/$FILENAME; 
+echo $MDPI_SIZE
+convert $i -resize x$MDPI_SIZE $MDPI/$FILENAME; 
 
 
 #CREATE HDPI
 HDPI_SIZE=$(echo "${MDPI_SIZE} * 1.5" | bc -l)
-convert $i -resize $HDPI_SIZE $HDPI/$FILENAME; 
+convert $i -resize x$HDPI_SIZE $HDPI/$FILENAME; 
 
 #CREATE XHDPI
 XHDPI_SIZE=$(echo "${MDPI_SIZE} * 2" | bc -l)
-convert $i -resize $XHDPI_SIZE $XHDPI/$FILENAME; 
+convert $i -resize x$XHDPI_SIZE $XHDPI/$FILENAME; 
 
 #CREATE XXHDPI
 mv $i $XXHDPI
