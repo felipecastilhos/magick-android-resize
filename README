@@ -1,3 +1,9 @@
+Magick Android Resize
+This project has been **ARCHIEVED** for history and study purpose. 
+
+This was a command-line tool to resize a image or a group of images to all android's density buckets. Now Figma and other Design Tools provide a better way to do this.
+
+
 ITS NECESSARY TO HAVE IMAGEMAGICK INSTALLED:
 http://www.imagemagick.org/
 
